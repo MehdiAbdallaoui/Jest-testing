@@ -63,7 +63,11 @@ class Interval {
      * @returns {Interval[]}
      */
     union(interval) {
+	if(this.overlaps(interval) {
+	if(this.start<interval.start) {debut = this.start;}
+	else {debut = interval.start;}
 
+	if(this.
     };
 
     /**
