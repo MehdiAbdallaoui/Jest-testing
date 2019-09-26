@@ -78,7 +78,27 @@ if (n == 1) {
  * @returns {array}
  */
 Util.fizzBuzz = function(n) {
+if (n < 1) {
+        throw 'n should be greater than or equal to 1'
+    }
 
+else
+{
+	var arr = [];
+
+	for(var i=1; i <= n; i++)
+	{
+		arr.push(i);
+	}
+	
+	for(var j=1; j<=n; j++)
+	{
+		if(((console.log(arr[j])) % 5 == 0) && ((console.log(arr[j])) % 3 == 0)) {arr[j]="FizzBuzz";}
+		else if(((console.log(arr[j])) % 5 == 0) && ((console.log(arr[j])) % 3 != 0)) {arr[j]="Buzz";}
+		else if(((console.log(arr[j])) % 5 != 0) && ((console.log(arr[j])) % 3 == 0)) {arr[j]="Fizz";}
+	}
+	return arr;
+}
 
 
 };
