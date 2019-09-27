@@ -42,4 +42,22 @@ describe('includes', function () {
 	});
 });
 
+describe('union', function() {
+
+	test('Test union de [85;87] et [90;93]', () => {
+		var interval_1 = new Interval(85, 87);
+		var interval_2 = new Interval(90, 93);
+		expect(interval_1.union(interval_2)).toStrictEqual([85,86,87,90,91,92,93]);
+	});
+
+
+	test('Test union de [85;87] et [86;89]', () => {
+		var interval_1 = new Interval(85, 87);
+		var interval_2 = new Interval(86, 89);
+		expect(interval_1.union(interval_2)).toStrictEqual([85,86,87,88,89]);
+	});
+});
+
+
+
 
