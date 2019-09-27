@@ -171,7 +171,40 @@ class Interval {
      */
     exclusion(interval) {
 
-};
+	var arr = [];
+
+	if(this.overlaps(interval))
+	{
+			/*var result1 = new Interval(this.start, interval.start);
+			var result2 = new Interval(this.end, interval.end);*/
+
+			for(var i = this.start ; i < interval.start ; i++)
+			{
+				arr.push(i);
+			}
+
+			for(var i = (this.end)+1 ; i <= interval.end ; i++)
+			{
+				arr.push(i);
+			}
+			return arr;
+	}
+
+	else if(!(this.overlaps(interval)))
+	{
+			for(var i = this.start ; i <= this.end ; i++)
+			{
+				arr.push(i);
+			}
+
+			for(var i = interval.start ; i <= interval.end ; i++)
+			{
+				arr.push(i);
+			}
+			return arr;
+		}
+	}
+}
 }
 
 module.exports = Interval;

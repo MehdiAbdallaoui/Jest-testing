@@ -86,5 +86,18 @@ describe('intersection', function() {
 });
 
 
+describe('exclusion', function() {
 
+	test('Test exclusion de [1;4] et [2;6]', () => {
+		var exclusion_1 = new Interval(1,4);
+		var exclusion_2 = new Interval(2,6);
+		expect(exclusion_1.exclusion(exclusion_2)).toStrictEqual([1,5,6]);
+	});
+
+	test('Test exclusion de [1;3] et [7;9]', () => {
+		var exclusion_1 = new Interval(1,3);
+		var exclusion_2 = new Interval(7,9);
+		expect(exclusion_1.exclusion(exclusion_2)).toStrictEqual([1,2,3,7,8,9]);
+	});
+});
 
