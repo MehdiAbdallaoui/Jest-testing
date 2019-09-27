@@ -1,0 +1,530 @@
+11:59:30 (17516) INFO ConfigReader Using stryker.conf.js in the current working directory.
+11:59:30 (17516) DEBUG BroadcastReporter Broadcasting to reporters ["html","clear-text","progress","dashboard"]
+11:59:30 (17516) DEBUG ConfigReader Loading config stryker.conf.js
+11:59:30 (17516) DEBUG PluginLoader Loading @stryker-mutator/* from /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator
+11:59:30 (17516) DEBUG PluginLoader Loading plugin "/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator/html-reporter" (matched with expression @stryker-mutator/*)
+11:59:30 (17516) DEBUG PluginLoader Loading plugin "/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+11:59:30 (17516) DEBUG PluginLoader Loading plugin "/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+11:59:30 (17516) DEBUG PluginLoader Loading plugins /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator/html-reporter
+11:59:30 (17516) DEBUG PluginLoader Loading plugins /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator/javascript-mutator
+11:59:30 (17516) DEBUG PluginLoader Loading plugins /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator/jest-runner
+11:59:30 (17516) DEBUG PluginLoader Loading plugins /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator/core/src/reporters/index.js
+11:59:30 (17516) INFO InputFileResolver Found 2 of 27 file(s) to be mutated.
+11:59:30 (17516) DEBUG InputFileResolver All input files: [
+  "/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/stryker.log",
+  "/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.gitignore",
+  "/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.travis.yml",
+  "/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/coverage/clover.xml",
+  "/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/coverage/coverage-final.json",
+  "/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/coverage/lcov-report/base.css",
+  "/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/coverage/lcov-report/block-navigation.js",
+  "/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/coverage/lcov-report/index.html",
+  "/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/coverage/lcov-report/prettify.css",
+  "/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/coverage/lcov-report/prettify.js",
+  "/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/coverage/lcov-report/sort-arrow-sprite.png",
+  "/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/coverage/lcov-report/sorter.js",
+  "/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/coverage/lcov-report/tp-jest/index.html",
+  "/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/coverage/lcov-report/tp-jest/src/index.html",
+  "/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/coverage/lcov-report/tp-jest/src/interval.js.html",
+  "/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/coverage/lcov-report/tp-jest/src/math.js.html",
+  "/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/coverage/lcov-report/tp-jest/sum.js.html",
+  "/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/coverage/lcov.info",
+  "/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/index.html",
+  "/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/package.json",
+  "/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js",
+  "/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.test.js",
+  "/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js",
+  "/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.test.js",
+  "/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/stryker.conf.js",
+  "/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/sum.js",
+  "/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/sum.test.js"
+]
+11:59:30 (17516) DEBUG InputFileResolver Files to mutate: [
+  "/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js",
+  "/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js"
+]
+11:59:30 (17516) DEBUG TemporaryDirectory Using temp directory "/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp"
+11:59:30 (17516) DEBUG TestFrameworkOrchestrator The `coverageAnalysis` setting is "off", not hooking into the test framework to achieve performance benefits.
+11:59:30 (17516) INFO InitialTestExecutor Starting initial test run. This may take a while.
+11:59:30 (17516) DEBUG Sandbox Creating a sandbox for files in /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox2556250
+11:59:30 (17516) DEBUG Sandbox Creating test runner 0
+11:59:30 (17516) DEBUG ChildProcessProxy Starting /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator/core/src/test-runner/ChildProcessTestRunnerWorker.js in child process 17531
+11:59:30 (17531) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox2556250
+11:59:30 (17531) DEBUG PluginLoader Loading @stryker-mutator/* from /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator
+11:59:30 (17531) DEBUG PluginLoader Loading plugin "/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator/html-reporter" (matched with expression @stryker-mutator/*)
+11:59:30 (17531) DEBUG PluginLoader Loading plugin "/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+11:59:30 (17531) DEBUG PluginLoader Loading plugin "/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+11:59:30 (17531) DEBUG PluginLoader Loading plugins /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator/html-reporter
+11:59:30 (17531) DEBUG PluginLoader Loading plugins /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator/javascript-mutator
+11:59:31 (17531) DEBUG PluginLoader Loading plugins /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator/jest-runner
+11:59:31 (17531) DEBUG PluginLoader Loading plugins /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator/core/src/reporters/index.js
+11:59:31 (17531) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+11:59:31 (17531) DEBUG JestTestRunner Project root is /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox2556250
+11:59:31 (17516) DEBUG TimeoutDecorator Starting timeout timer (300000 ms) for a test run
+11:59:31 (17531) TRACE JestPromiseTestAdapter Invoking Jest with config {"verbose":false,"coverageThreshold":{"global":{"branches":0,"functions":0,"lines":70,"statements":0}},"collectCoverage":false,"bail":false,"notify":false,"rootDir":"/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox2556250","reporters":[]}
+11:59:33 (17516) DEBUG ChildProcessProxy Disposing of worker process 17531
+11:59:33 (17516) DEBUG ChildProcessProxy Kill 17531
+11:59:33 (17516) INFO InitialTestExecutor Initial test run succeeded. Ran 38 tests in 2 seconds (net 18 ms, overhead 2019 ms).
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code ""[" + this.start + "," + this.end - "]""
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code ""[" + this.start + "," - this.end"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code ""[" + this.start - ",""
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code ""[" - this.start"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code """"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code """"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code """"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "this.end > interval.start || this.start < interval.end"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "true"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "this.end >= interval.start"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "this.end <= interval.start"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "true"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "this.start <= interval.end"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "this.start >= interval.end"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "true"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "this.end > interval.end || this.start < interval.start"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "true"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "this.end >= interval.end"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "this.end <= interval.end"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "true"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "this.start <= interval.start"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "this.start >= interval.start"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "true"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator IfStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator IfStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "true"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator IfStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator IfStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "true"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "this.start <= interval.start"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "this.start >= interval.start"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator IfStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator IfStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "true"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "this.end <= interval.end"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "this.end >= interval.end"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator ForStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "i < result.end"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "i > result.end"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator PostfixUnaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "i--"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator IfStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator IfStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "true"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator PrefixUnaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "this.overlaps(interval)"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator IfStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator IfStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "true"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "this.start < interval.start || this.end < interval.start"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "this.start <= interval.start"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "this.start >= interval.start"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "true"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "this.end <= interval.start"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "this.end >= interval.start"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "true"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator ForStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "i < result1.end"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "i > result1.end"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator PostfixUnaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "i--"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator ForStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "i < result2.end"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "i > result2.end"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator PostfixUnaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "i--"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator IfStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator IfStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "true"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator ForStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "i < interval.end"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "i > interval.end"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator PostfixUnaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "i--"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator IfStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator IfStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "true"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator ForStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "i < this.end"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "i > this.end"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator PostfixUnaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "i--"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator IfStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator IfStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "true"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator ForStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "i <= interval.start"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "i >= interval.start"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator PostfixUnaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "i--"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator ForStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "this.end - 1"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "i < interval.end"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "i > interval.end"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator PostfixUnaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "i--"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator IfStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator IfStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "true"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator PrefixUnaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "this.overlaps(interval)"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator ForStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "i < this.end"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "i > this.end"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator PostfixUnaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "i--"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator ForStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "i < interval.end"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "i > interval.end"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator PostfixUnaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "i--"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/interval.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator IfStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator IfStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "true"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "n !== 0"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator IfStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator IfStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "true"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "n > 3000"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "n < 3000"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code """"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator IfStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator IfStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "true"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "n <= 0"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "n >= 0"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code """"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "n / Util.factorial(n - 1)"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "n + 1"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator IfStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator IfStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "true"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "n === 1 && n === 0"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "n !== 1"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "true"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "n !== 0"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "true"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BooleanSubstitution in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "true"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator IfStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator IfStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "true"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "n <= 0"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "n >= 0"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code """"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator ForStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "i <= n"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "i >= n"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator PostfixUnaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "i--"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator IfStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator IfStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "true"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "n % i !== 0"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "n * i"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BooleanSubstitution in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "true"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BooleanSubstitution in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator IfStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator IfStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "true"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "n != 0"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code """"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator IfStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator IfStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "true"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "n != 1"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code """"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator WhileStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "i < n"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "i > n"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator IfStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator IfStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "true"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator PostfixUnaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "i--"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator IfStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator IfStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "true"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "n <= 1"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "n >= 1"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code """"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator ForStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "i < n"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "i > n"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator PostfixUnaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "i--"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator ForStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "j < n"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "j > n"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator PostfixUnaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "j--"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator IfStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator IfStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "true"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "arr[j] % 5 == 0 || arr[j] % 3 == 0"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "arr[j] % 5 != 0"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "true"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "arr[j] * 5"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "arr[j] % 3 != 0"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "true"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "arr[j] * 3"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code """"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator IfStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator IfStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "true"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "arr[j] % 5 == 0 || arr[j] % 3 != 0"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "arr[j] % 5 != 0"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "true"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "arr[j] * 5"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "arr[j] % 3 == 0"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "true"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "arr[j] * 3"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code """"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator IfStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator IfStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "true"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "arr[j] % 5 != 0 || arr[j] % 3 == 0"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "arr[j] % 5 == 0"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "true"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "arr[j] * 5"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "arr[j] % 3 != 0"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "true"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "arr[j] * 3"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code """"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code ""Stryker was here!""
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code ""Stryker was here!""
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator IfStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator IfStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "true"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "char != 90"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator IfStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "false"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator IfStatement in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "true"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "char != 122"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator Block in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "{}"
+11:59:33 (17516) TRACE JavaScriptMutator Generated mutant for mutator BinaryExpression in file /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/src/math.js with replacement code "char - 1"
+11:59:33 (17516) INFO MutatorFacade 264 Mutant(s) generated
+11:59:33 (17516) INFO SandboxPool Creating 4 test runners (based on CPU count)
+11:59:33 (17516) DEBUG Sandbox Creating a sandbox for files in /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox4989317
+11:59:33 (17516) DEBUG Sandbox Creating a sandbox for files in /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox5485406
+11:59:33 (17516) DEBUG Sandbox Creating test runner 0
+11:59:33 (17516) DEBUG ChildProcessProxy Starting /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator/core/src/test-runner/ChildProcessTestRunnerWorker.js in child process 17552
+11:59:33 (17516) DEBUG Sandbox Creating test runner 1
+11:59:33 (17516) DEBUG ChildProcessProxy Starting /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator/core/src/test-runner/ChildProcessTestRunnerWorker.js in child process 17558
+11:59:33 (17516) DEBUG Sandbox Creating a sandbox for files in /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3308031
+11:59:33 (17552) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox4989317
+11:59:33 (17552) DEBUG PluginLoader Loading @stryker-mutator/* from /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator
+11:59:33 (17552) DEBUG PluginLoader Loading plugin "/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator/html-reporter" (matched with expression @stryker-mutator/*)
+11:59:33 (17552) DEBUG PluginLoader Loading plugin "/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+11:59:33 (17552) DEBUG PluginLoader Loading plugin "/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+11:59:33 (17552) DEBUG PluginLoader Loading plugins /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator/html-reporter
+11:59:33 (17552) DEBUG PluginLoader Loading plugins /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator/javascript-mutator
+11:59:33 (17552) DEBUG PluginLoader Loading plugins /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator/jest-runner
+11:59:33 (17558) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox5485406
+11:59:33 (17558) DEBUG PluginLoader Loading @stryker-mutator/* from /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator
+11:59:33 (17558) DEBUG PluginLoader Loading plugin "/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator/html-reporter" (matched with expression @stryker-mutator/*)
+11:59:33 (17558) DEBUG PluginLoader Loading plugin "/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+11:59:33 (17558) DEBUG PluginLoader Loading plugin "/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+11:59:33 (17558) DEBUG PluginLoader Loading plugins /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator/html-reporter
+11:59:33 (17558) DEBUG PluginLoader Loading plugins /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator/javascript-mutator
+11:59:33 (17558) DEBUG PluginLoader Loading plugins /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator/jest-runner
+11:59:33 (17552) DEBUG PluginLoader Loading plugins /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator/core/src/reporters/index.js
+11:59:33 (17552) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+11:59:33 (17552) DEBUG JestTestRunner Project root is /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox4989317
+11:59:33 (17558) DEBUG PluginLoader Loading plugins /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator/core/src/reporters/index.js
+11:59:33 (17558) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+11:59:33 (17558) DEBUG JestTestRunner Project root is /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox5485406
+11:59:33 (17516) DEBUG Sandbox Creating a sandbox for files in /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3649631
+11:59:33 (17516) DEBUG TimeoutDecorator Starting timeout timer (7046 ms) for a test run
+11:59:33 (17516) DEBUG TimeoutDecorator Starting timeout timer (7046 ms) for a test run
+11:59:33 (17516) DEBUG Sandbox Creating test runner 2
+11:59:33 (17516) DEBUG ChildProcessProxy Starting /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator/core/src/test-runner/ChildProcessTestRunnerWorker.js in child process 17574
+11:59:33 (17516) DEBUG Sandbox Creating test runner 3
+11:59:33 (17516) DEBUG ChildProcessProxy Starting /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator/core/src/test-runner/ChildProcessTestRunnerWorker.js in child process 17576
+11:59:33 (17558) TRACE JestPromiseTestAdapter Invoking Jest with config {"verbose":false,"coverageThreshold":{"global":{"branches":0,"functions":0,"lines":70,"statements":0}},"collectCoverage":false,"bail":false,"notify":false,"rootDir":"/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox5485406","reporters":[]}
+11:59:33 (17558) TRACE JestPromiseTestAdapter Only running tests related to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox5485406/src/interval.js
+11:59:33 (17552) TRACE JestPromiseTestAdapter Invoking Jest with config {"verbose":false,"coverageThreshold":{"global":{"branches":0,"functions":0,"lines":70,"statements":0}},"collectCoverage":false,"bail":false,"notify":false,"rootDir":"/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox4989317","reporters":[]}
+11:59:33 (17552) TRACE JestPromiseTestAdapter Only running tests related to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox4989317/src/interval.js
+11:59:34 (17516) DEBUG TimeoutDecorator Starting timeout timer (7046 ms) for a test run
+11:59:34 (17574) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3308031
+11:59:34 (17574) DEBUG PluginLoader Loading @stryker-mutator/* from /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator
+11:59:34 (17574) DEBUG PluginLoader Loading plugin "/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator/html-reporter" (matched with expression @stryker-mutator/*)
+11:59:34 (17574) DEBUG PluginLoader Loading plugin "/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+11:59:34 (17574) DEBUG PluginLoader Loading plugin "/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+11:59:34 (17574) DEBUG PluginLoader Loading plugins /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator/html-reporter
+11:59:34 (17574) DEBUG PluginLoader Loading plugins /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator/javascript-mutator
+11:59:34 (17574) DEBUG PluginLoader Loading plugins /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator/jest-runner
+11:59:34 (17574) DEBUG PluginLoader Loading plugins /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator/core/src/reporters/index.js
+11:59:34 (17574) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+11:59:34 (17574) DEBUG JestTestRunner Project root is /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3308031
+11:59:34 (17574) TRACE JestPromiseTestAdapter Invoking Jest with config {"verbose":false,"coverageThreshold":{"global":{"branches":0,"functions":0,"lines":70,"statements":0}},"collectCoverage":false,"bail":false,"notify":false,"rootDir":"/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3308031","reporters":[]}
+11:59:34 (17574) TRACE JestPromiseTestAdapter Only running tests related to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3308031/src/interval.js
+11:59:34 (17516) DEBUG TimeoutDecorator Starting timeout timer (7046 ms) for a test run
+11:59:34 (17576) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3649631
+11:59:34 (17576) DEBUG PluginLoader Loading @stryker-mutator/* from /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator
+11:59:34 (17576) DEBUG PluginLoader Loading plugin "/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator/html-reporter" (matched with expression @stryker-mutator/*)
+11:59:34 (17576) DEBUG PluginLoader Loading plugin "/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+11:59:34 (17576) DEBUG PluginLoader Loading plugin "/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+11:59:34 (17576) DEBUG PluginLoader Loading plugins /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator/html-reporter
+11:59:34 (17576) DEBUG PluginLoader Loading plugins /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator/javascript-mutator
+11:59:34 (17576) DEBUG PluginLoader Loading plugins /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator/jest-runner
+11:59:34 (17576) DEBUG PluginLoader Loading plugins /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/node_modules/@stryker-mutator/core/src/reporters/index.js
+11:59:34 (17576) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+11:59:34 (17576) DEBUG JestTestRunner Project root is /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3649631
+11:59:34 (17576) TRACE JestPromiseTestAdapter Invoking Jest with config {"verbose":false,"coverageThreshold":{"global":{"branches":0,"functions":0,"lines":70,"statements":0}},"collectCoverage":false,"bail":false,"notify":false,"rootDir":"/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3649631","reporters":[]}
+11:59:34 (17576) TRACE JestPromiseTestAdapter Only running tests related to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3649631/src/interval.js
+11:59:36 (17516) DEBUG TimeoutDecorator Starting timeout timer (7046 ms) for a test run
+11:59:36 (17558) TRACE JestPromiseTestAdapter Invoking Jest with config {"verbose":false,"coverageThreshold":{"global":{"branches":0,"functions":0,"lines":70,"statements":0}},"collectCoverage":false,"bail":false,"notify":false,"rootDir":"/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox5485406","reporters":[]}
+11:59:36 (17558) TRACE JestPromiseTestAdapter Only running tests related to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox5485406/src/interval.js
+11:59:36 (17516) DEBUG TimeoutDecorator Starting timeout timer (7046 ms) for a test run
+11:59:36 (17552) TRACE JestPromiseTestAdapter Invoking Jest with config {"verbose":false,"coverageThreshold":{"global":{"branches":0,"functions":0,"lines":70,"statements":0}},"collectCoverage":false,"bail":false,"notify":false,"rootDir":"/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox4989317","reporters":[]}
+11:59:36 (17552) TRACE JestPromiseTestAdapter Only running tests related to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox4989317/src/interval.js
+11:59:37 (17516) DEBUG TimeoutDecorator Starting timeout timer (7046 ms) for a test run
+11:59:37 (17574) TRACE JestPromiseTestAdapter Invoking Jest with config {"verbose":false,"coverageThreshold":{"global":{"branches":0,"functions":0,"lines":70,"statements":0}},"collectCoverage":false,"bail":false,"notify":false,"rootDir":"/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3308031","reporters":[]}
+11:59:37 (17574) TRACE JestPromiseTestAdapter Only running tests related to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3308031/src/interval.js
+11:59:37 (17516) DEBUG TimeoutDecorator Starting timeout timer (7046 ms) for a test run
+11:59:37 (17558) TRACE JestPromiseTestAdapter Invoking Jest with config {"verbose":false,"coverageThreshold":{"global":{"branches":0,"functions":0,"lines":70,"statements":0}},"collectCoverage":false,"bail":false,"notify":false,"rootDir":"/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox5485406","reporters":[]}
+11:59:37 (17558) TRACE JestPromiseTestAdapter Only running tests related to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox5485406/src/interval.js
+11:59:37 (17516) DEBUG TimeoutDecorator Starting timeout timer (7046 ms) for a test run
+11:59:37 (17576) TRACE JestPromiseTestAdapter Invoking Jest with config {"verbose":false,"coverageThreshold":{"global":{"branches":0,"functions":0,"lines":70,"statements":0}},"collectCoverage":false,"bail":false,"notify":false,"rootDir":"/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3649631","reporters":[]}
+11:59:37 (17576) TRACE JestPromiseTestAdapter Only running tests related to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3649631/src/interval.js
+11:59:37 (17516) DEBUG TimeoutDecorator Starting timeout timer (7046 ms) for a test run
+11:59:37 (17552) TRACE JestPromiseTestAdapter Invoking Jest with config {"verbose":false,"coverageThreshold":{"global":{"branches":0,"functions":0,"lines":70,"statements":0}},"collectCoverage":false,"bail":false,"notify":false,"rootDir":"/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox4989317","reporters":[]}
+11:59:37 (17552) TRACE JestPromiseTestAdapter Only running tests related to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox4989317/src/interval.js
+11:59:37 (17516) DEBUG TimeoutDecorator Starting timeout timer (7046 ms) for a test run
+11:59:37 (17574) TRACE JestPromiseTestAdapter Invoking Jest with config {"verbose":false,"coverageThreshold":{"global":{"branches":0,"functions":0,"lines":70,"statements":0}},"collectCoverage":false,"bail":false,"notify":false,"rootDir":"/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3308031","reporters":[]}
+11:59:37 (17574) TRACE JestPromiseTestAdapter Only running tests related to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3308031/src/interval.js
+11:59:37 (17516) DEBUG TimeoutDecorator Starting timeout timer (7046 ms) for a test run
+11:59:37 (17558) TRACE JestPromiseTestAdapter Invoking Jest with config {"verbose":false,"coverageThreshold":{"global":{"branches":0,"functions":0,"lines":70,"statements":0}},"collectCoverage":false,"bail":false,"notify":false,"rootDir":"/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox5485406","reporters":[]}
+11:59:37 (17558) TRACE JestPromiseTestAdapter Only running tests related to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox5485406/src/interval.js
+11:59:37 (17516) DEBUG TimeoutDecorator Starting timeout timer (7046 ms) for a test run
+11:59:37 (17552) TRACE JestPromiseTestAdapter Invoking Jest with config {"verbose":false,"coverageThreshold":{"global":{"branches":0,"functions":0,"lines":70,"statements":0}},"collectCoverage":false,"bail":false,"notify":false,"rootDir":"/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox4989317","reporters":[]}
+11:59:37 (17552) TRACE JestPromiseTestAdapter Only running tests related to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox4989317/src/interval.js
+11:59:38 (17516) DEBUG TimeoutDecorator Starting timeout timer (7046 ms) for a test run
+11:59:38 (17576) TRACE JestPromiseTestAdapter Invoking Jest with config {"verbose":false,"coverageThreshold":{"global":{"branches":0,"functions":0,"lines":70,"statements":0}},"collectCoverage":false,"bail":false,"notify":false,"rootDir":"/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3649631","reporters":[]}
+11:59:38 (17576) TRACE JestPromiseTestAdapter Only running tests related to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3649631/src/interval.js
+11:59:38 (17516) DEBUG TimeoutDecorator Starting timeout timer (7046 ms) for a test run
+11:59:38 (17574) TRACE JestPromiseTestAdapter Invoking Jest with config {"verbose":false,"coverageThreshold":{"global":{"branches":0,"functions":0,"lines":70,"statements":0}},"collectCoverage":false,"bail":false,"notify":false,"rootDir":"/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3308031","reporters":[]}
+11:59:38 (17574) TRACE JestPromiseTestAdapter Only running tests related to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3308031/src/interval.js
+11:59:38 (17516) DEBUG TimeoutDecorator Starting timeout timer (7046 ms) for a test run
+11:59:38 (17558) TRACE JestPromiseTestAdapter Invoking Jest with config {"verbose":false,"coverageThreshold":{"global":{"branches":0,"functions":0,"lines":70,"statements":0}},"collectCoverage":false,"bail":false,"notify":false,"rootDir":"/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox5485406","reporters":[]}
+11:59:38 (17558) TRACE JestPromiseTestAdapter Only running tests related to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox5485406/src/interval.js
+11:59:39 (17516) DEBUG TimeoutDecorator Starting timeout timer (7046 ms) for a test run
+11:59:39 (17552) TRACE JestPromiseTestAdapter Invoking Jest with config {"verbose":false,"coverageThreshold":{"global":{"branches":0,"functions":0,"lines":70,"statements":0}},"collectCoverage":false,"bail":false,"notify":false,"rootDir":"/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox4989317","reporters":[]}
+11:59:39 (17552) TRACE JestPromiseTestAdapter Only running tests related to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox4989317/src/interval.js
+11:59:39 (17516) DEBUG TimeoutDecorator Starting timeout timer (7046 ms) for a test run
+11:59:39 (17576) TRACE JestPromiseTestAdapter Invoking Jest with config {"verbose":false,"coverageThreshold":{"global":{"branches":0,"functions":0,"lines":70,"statements":0}},"collectCoverage":false,"bail":false,"notify":false,"rootDir":"/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3649631","reporters":[]}
+11:59:39 (17576) TRACE JestPromiseTestAdapter Only running tests related to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3649631/src/interval.js
+11:59:39 (17516) DEBUG TimeoutDecorator Starting timeout timer (7046 ms) for a test run
+11:59:39 (17574) TRACE JestPromiseTestAdapter Invoking Jest with config {"verbose":false,"coverageThreshold":{"global":{"branches":0,"functions":0,"lines":70,"statements":0}},"collectCoverage":false,"bail":false,"notify":false,"rootDir":"/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3308031","reporters":[]}
+11:59:39 (17574) TRACE JestPromiseTestAdapter Only running tests related to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3308031/src/interval.js
+11:59:39 (17516) DEBUG TimeoutDecorator Starting timeout timer (7046 ms) for a test run
+11:59:39 (17558) TRACE JestPromiseTestAdapter Invoking Jest with config {"verbose":false,"coverageThreshold":{"global":{"branches":0,"functions":0,"lines":70,"statements":0}},"collectCoverage":false,"bail":false,"notify":false,"rootDir":"/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox5485406","reporters":[]}
+11:59:39 (17558) TRACE JestPromiseTestAdapter Only running tests related to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox5485406/src/interval.js
+11:59:39 (17516) DEBUG TimeoutDecorator Starting timeout timer (7046 ms) for a test run
+11:59:39 (17552) TRACE JestPromiseTestAdapter Invoking Jest with config {"verbose":false,"coverageThreshold":{"global":{"branches":0,"functions":0,"lines":70,"statements":0}},"collectCoverage":false,"bail":false,"notify":false,"rootDir":"/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox4989317","reporters":[]}
+11:59:39 (17552) TRACE JestPromiseTestAdapter Only running tests related to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox4989317/src/interval.js
+11:59:40 (17516) DEBUG TimeoutDecorator Starting timeout timer (7046 ms) for a test run
+11:59:40 (17576) TRACE JestPromiseTestAdapter Invoking Jest with config {"verbose":false,"coverageThreshold":{"global":{"branches":0,"functions":0,"lines":70,"statements":0}},"collectCoverage":false,"bail":false,"notify":false,"rootDir":"/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3649631","reporters":[]}
+11:59:40 (17576) TRACE JestPromiseTestAdapter Only running tests related to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3649631/src/interval.js
+11:59:40 (17516) DEBUG TimeoutDecorator Starting timeout timer (7046 ms) for a test run
+11:59:40 (17574) TRACE JestPromiseTestAdapter Invoking Jest with config {"verbose":false,"coverageThreshold":{"global":{"branches":0,"functions":0,"lines":70,"statements":0}},"collectCoverage":false,"bail":false,"notify":false,"rootDir":"/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3308031","reporters":[]}
+11:59:40 (17574) TRACE JestPromiseTestAdapter Only running tests related to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3308031/src/interval.js
+11:59:40 (17516) DEBUG TimeoutDecorator Starting timeout timer (7046 ms) for a test run
+11:59:40 (17558) TRACE JestPromiseTestAdapter Invoking Jest with config {"verbose":false,"coverageThreshold":{"global":{"branches":0,"functions":0,"lines":70,"statements":0}},"collectCoverage":false,"bail":false,"notify":false,"rootDir":"/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox5485406","reporters":[]}
+11:59:40 (17558) TRACE JestPromiseTestAdapter Only running tests related to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox5485406/src/interval.js
+11:59:40 (17516) DEBUG TimeoutDecorator Starting timeout timer (7046 ms) for a test run
+11:59:40 (17552) TRACE JestPromiseTestAdapter Invoking Jest with config {"verbose":false,"coverageThreshold":{"global":{"branches":0,"functions":0,"lines":70,"statements":0}},"collectCoverage":false,"bail":false,"notify":false,"rootDir":"/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox4989317","reporters":[]}
+11:59:40 (17552) TRACE JestPromiseTestAdapter Only running tests related to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox4989317/src/interval.js
+11:59:40 (17516) DEBUG TimeoutDecorator Starting timeout timer (7046 ms) for a test run
+11:59:40 (17576) TRACE JestPromiseTestAdapter Invoking Jest with config {"verbose":false,"coverageThreshold":{"global":{"branches":0,"functions":0,"lines":70,"statements":0}},"collectCoverage":false,"bail":false,"notify":false,"rootDir":"/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3649631","reporters":[]}
+11:59:40 (17576) TRACE JestPromiseTestAdapter Only running tests related to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3649631/src/interval.js
+11:59:40 (17516) DEBUG TimeoutDecorator Starting timeout timer (7046 ms) for a test run
+11:59:40 (17574) TRACE JestPromiseTestAdapter Invoking Jest with config {"verbose":false,"coverageThreshold":{"global":{"branches":0,"functions":0,"lines":70,"statements":0}},"collectCoverage":false,"bail":false,"notify":false,"rootDir":"/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3308031","reporters":[]}
+11:59:40 (17574) TRACE JestPromiseTestAdapter Only running tests related to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3308031/src/interval.js
+11:59:40 (17516) DEBUG TimeoutDecorator Starting timeout timer (7046 ms) for a test run
+11:59:40 (17558) TRACE JestPromiseTestAdapter Invoking Jest with config {"verbose":false,"coverageThreshold":{"global":{"branches":0,"functions":0,"lines":70,"statements":0}},"collectCoverage":false,"bail":false,"notify":false,"rootDir":"/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox5485406","reporters":[]}
+11:59:40 (17558) TRACE JestPromiseTestAdapter Only running tests related to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox5485406/src/interval.js
+11:59:40 (17516) DEBUG TimeoutDecorator Starting timeout timer (7046 ms) for a test run
+11:59:40 (17552) TRACE JestPromiseTestAdapter Invoking Jest with config {"verbose":false,"coverageThreshold":{"global":{"branches":0,"functions":0,"lines":70,"statements":0}},"collectCoverage":false,"bail":false,"notify":false,"rootDir":"/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox4989317","reporters":[]}
+11:59:40 (17552) TRACE JestPromiseTestAdapter Only running tests related to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox4989317/src/interval.js
+11:59:41 (17516) DEBUG TimeoutDecorator Starting timeout timer (7046 ms) for a test run
+11:59:41 (17576) TRACE JestPromiseTestAdapter Invoking Jest with config {"verbose":false,"coverageThreshold":{"global":{"branches":0,"functions":0,"lines":70,"statements":0}},"collectCoverage":false,"bail":false,"notify":false,"rootDir":"/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3649631","reporters":[]}
+11:59:41 (17576) TRACE JestPromiseTestAdapter Only running tests related to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3649631/src/interval.js
+11:59:41 (17516) DEBUG TimeoutDecorator Starting timeout timer (7046 ms) for a test run
+11:59:41 (17574) TRACE JestPromiseTestAdapter Invoking Jest with config {"verbose":false,"coverageThreshold":{"global":{"branches":0,"functions":0,"lines":70,"statements":0}},"collectCoverage":false,"bail":false,"notify":false,"rootDir":"/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3308031","reporters":[]}
+11:59:41 (17574) TRACE JestPromiseTestAdapter Only running tests related to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3308031/src/interval.js
+11:59:41 (17516) DEBUG TimeoutDecorator Starting timeout timer (7046 ms) for a test run
+11:59:41 (17558) TRACE JestPromiseTestAdapter Invoking Jest with config {"verbose":false,"coverageThreshold":{"global":{"branches":0,"functions":0,"lines":70,"statements":0}},"collectCoverage":false,"bail":false,"notify":false,"rootDir":"/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox5485406","reporters":[]}
+11:59:41 (17558) TRACE JestPromiseTestAdapter Only running tests related to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox5485406/src/interval.js
+11:59:41 (17516) DEBUG TimeoutDecorator Starting timeout timer (7046 ms) for a test run
+11:59:41 (17552) TRACE JestPromiseTestAdapter Invoking Jest with config {"verbose":false,"coverageThreshold":{"global":{"branches":0,"functions":0,"lines":70,"statements":0}},"collectCoverage":false,"bail":false,"notify":false,"rootDir":"/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox4989317","reporters":[]}
+11:59:41 (17552) TRACE JestPromiseTestAdapter Only running tests related to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox4989317/src/interval.js
+11:59:41 (17516) DEBUG TimeoutDecorator Starting timeout timer (7046 ms) for a test run
+11:59:41 (17576) TRACE JestPromiseTestAdapter Invoking Jest with config {"verbose":false,"coverageThreshold":{"global":{"branches":0,"functions":0,"lines":70,"statements":0}},"collectCoverage":false,"bail":false,"notify":false,"rootDir":"/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3649631","reporters":[]}
+11:59:41 (17576) TRACE JestPromiseTestAdapter Only running tests related to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3649631/src/interval.js
+11:59:41 (17516) DEBUG TimeoutDecorator Starting timeout timer (7046 ms) for a test run
+11:59:41 (17574) TRACE JestPromiseTestAdapter Invoking Jest with config {"verbose":false,"coverageThreshold":{"global":{"branches":0,"functions":0,"lines":70,"statements":0}},"collectCoverage":false,"bail":false,"notify":false,"rootDir":"/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3308031","reporters":[]}
+11:59:41 (17574) TRACE JestPromiseTestAdapter Only running tests related to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3308031/src/interval.js
+11:59:41 (17516) DEBUG TimeoutDecorator Starting timeout timer (7046 ms) for a test run
+11:59:41 (17558) TRACE JestPromiseTestAdapter Invoking Jest with config {"verbose":false,"coverageThreshold":{"global":{"branches":0,"functions":0,"lines":70,"statements":0}},"collectCoverage":false,"bail":false,"notify":false,"rootDir":"/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox5485406","reporters":[]}
+11:59:41 (17558) TRACE JestPromiseTestAdapter Only running tests related to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox5485406/src/interval.js
+11:59:41 (17516) DEBUG TimeoutDecorator Starting timeout timer (7046 ms) for a test run
+11:59:41 (17552) TRACE JestPromiseTestAdapter Invoking Jest with config {"verbose":false,"coverageThreshold":{"global":{"branches":0,"functions":0,"lines":70,"statements":0}},"collectCoverage":false,"bail":false,"notify":false,"rootDir":"/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox4989317","reporters":[]}
+11:59:41 (17552) TRACE JestPromiseTestAdapter Only running tests related to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox4989317/src/interval.js
+11:59:42 (17516) DEBUG TimeoutDecorator Starting timeout timer (7046 ms) for a test run
+11:59:42 (17576) TRACE JestPromiseTestAdapter Invoking Jest with config {"verbose":false,"coverageThreshold":{"global":{"branches":0,"functions":0,"lines":70,"statements":0}},"collectCoverage":false,"bail":false,"notify":false,"rootDir":"/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3649631","reporters":[]}
+11:59:42 (17576) TRACE JestPromiseTestAdapter Only running tests related to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3649631/src/interval.js
+11:59:42 (17516) DEBUG TimeoutDecorator Starting timeout timer (7046 ms) for a test run
+11:59:42 (17574) TRACE JestPromiseTestAdapter Invoking Jest with config {"verbose":false,"coverageThreshold":{"global":{"branches":0,"functions":0,"lines":70,"statements":0}},"collectCoverage":false,"bail":false,"notify":false,"rootDir":"/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3308031","reporters":[]}
+11:59:42 (17574) TRACE JestPromiseTestAdapter Only running tests related to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3308031/src/interval.js
+11:59:42 (17516) DEBUG TimeoutDecorator Starting timeout timer (7046 ms) for a test run
+11:59:42 (17516) DEBUG TimeoutDecorator Starting timeout timer (7046 ms) for a test run
+11:59:42 (17552) TRACE JestPromiseTestAdapter Invoking Jest with config {"verbose":false,"coverageThreshold":{"global":{"branches":0,"functions":0,"lines":70,"statements":0}},"collectCoverage":false,"bail":false,"notify":false,"rootDir":"/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox4989317","reporters":[]}
+11:59:42 (17552) TRACE JestPromiseTestAdapter Only running tests related to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox4989317/src/interval.js
+11:59:42 (17558) TRACE JestPromiseTestAdapter Invoking Jest with config {"verbose":false,"coverageThreshold":{"global":{"branches":0,"functions":0,"lines":70,"statements":0}},"collectCoverage":false,"bail":false,"notify":false,"rootDir":"/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox5485406","reporters":[]}
+11:59:42 (17558) TRACE JestPromiseTestAdapter Only running tests related to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox5485406/src/interval.js
+11:59:42 (17516) DEBUG TimeoutDecorator Starting timeout timer (7046 ms) for a test run
+11:59:42 (17576) TRACE JestPromiseTestAdapter Invoking Jest with config {"verbose":false,"coverageThreshold":{"global":{"branches":0,"functions":0,"lines":70,"statements":0}},"collectCoverage":false,"bail":false,"notify":false,"rootDir":"/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3649631","reporters":[]}
+11:59:42 (17576) TRACE JestPromiseTestAdapter Only running tests related to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3649631/src/interval.js
+11:59:42 (17516) DEBUG TimeoutDecorator Starting timeout timer (7046 ms) for a test run
+11:59:42 (17574) TRACE JestPromiseTestAdapter Invoking Jest with config {"verbose":false,"coverageThreshold":{"global":{"branches":0,"functions":0,"lines":70,"statements":0}},"collectCoverage":false,"bail":false,"notify":false,"rootDir":"/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3308031","reporters":[]}
+11:59:42 (17574) TRACE JestPromiseTestAdapter Only running tests related to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3308031/src/interval.js
+11:59:42 (17516) DEBUG TimeoutDecorator Starting timeout timer (7046 ms) for a test run
+11:59:42 (17558) TRACE JestPromiseTestAdapter Invoking Jest with config {"verbose":false,"coverageThreshold":{"global":{"branches":0,"functions":0,"lines":70,"statements":0}},"collectCoverage":false,"bail":false,"notify":false,"rootDir":"/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox5485406","reporters":[]}
+11:59:42 (17558) TRACE JestPromiseTestAdapter Only running tests related to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox5485406/src/interval.js
+11:59:43 (17516) DEBUG TimeoutDecorator Starting timeout timer (7046 ms) for a test run
+11:59:43 (17552) TRACE JestPromiseTestAdapter Invoking Jest with config {"verbose":false,"coverageThreshold":{"global":{"branches":0,"functions":0,"lines":70,"statements":0}},"collectCoverage":false,"bail":false,"notify":false,"rootDir":"/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox4989317","reporters":[]}
+11:59:43 (17552) TRACE JestPromiseTestAdapter Only running tests related to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox4989317/src/interval.js
+11:59:43 (17516) DEBUG TimeoutDecorator Starting timeout timer (7046 ms) for a test run
+11:59:43 (17576) TRACE JestPromiseTestAdapter Invoking Jest with config {"verbose":false,"coverageThreshold":{"global":{"branches":0,"functions":0,"lines":70,"statements":0}},"collectCoverage":false,"bail":false,"notify":false,"rootDir":"/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3649631","reporters":[]}
+11:59:43 (17576) TRACE JestPromiseTestAdapter Only running tests related to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox3649631/src/interval.js
+11:59:43 (17516) DEBUG TimeoutDecorator Starting timeout timer (7046 ms) for a test run
+11:59:43 (17558) TRACE JestPromiseTestAdapter Invoking Jest with config {"verbose":false,"coverageThreshold":{"global":{"branches":0,"functions":0,"lines":70,"statements":0}},"collectCoverage":false,"bail":false,"notify":false,"rootDir":"/home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox5485406","reporters":[]}
+11:59:43 (17558) TRACE JestPromiseTestAdapter Only running tests related to /home/mehdi/Bureau/ENSIIE-S3/UE_SOFTWARE_TESTING/TP2/tp-jest/.stryker-tmp/sandbox5485406/src/interval.js
