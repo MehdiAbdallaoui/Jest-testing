@@ -68,12 +68,23 @@ describe('sumPrime', function () {
 describe('fizzBuzz', function () {
 
 	test('Test fizzBuzz de 3', () => {
-    		expect(Util.fizzBuzz(3)).toBe([1,2,"Fizz"]);
+    		expect(Util.fizzBuzz(3)).toStrictEqual([1,2,"Fizz"]);
 	});
 	test('Test fizzBuzz de 6', () => {
-    		expect(Util.fizzBuzz(6)).toBe([1,2,"Fizz",4,"Buzz","Fizz"]);
+    		expect(Util.fizzBuzz(6)).toStrictEqual([1,2,"Fizz",4,"Buzz","Fizz"]);
 	});
 	test('Test fizzBuzz de 0 throw exception', () => {
-		expect(() => { Util.fizzBuzz(0) }).toThrow('0 is less than 1!');
+		expect(() => { Util.fizzBuzz(0) }).toThrow('n should be greater than or equal to 1');
+	});
+});
+
+describe('cipher', function () {
+
+	test('Test cipher de mehdi', () => {
+    		expect(Util.cipher("mehdi")).toEqual("nfiej");
+	});
+
+	test('Test cipher de A', () => {
+    		expect(Util.cipher("A")).toEqual("B");
 	});
 });

@@ -43,7 +43,7 @@ class Interval {
      * @returns {boolean}
      */
     includes(interval) {
-	return this.end > interval.end && this.start < interval.start;
+
     };
 
     /**
@@ -63,11 +63,7 @@ class Interval {
      * @returns {Interval[]}
      */
     union(interval) {
-	if(this.overlaps(interval) {
-	if(this.start<interval.start) {debut = this.start;}
-	else {debut = interval.start;}
 
-	if(this.
     };
 
     /**
@@ -108,7 +104,7 @@ class Interval {
      */
     exclusion(interval) {
 
-    };
+};
 }
 
 module.exports = Interval;

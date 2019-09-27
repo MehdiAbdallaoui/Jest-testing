@@ -81,7 +81,6 @@ Util.fizzBuzz = function(n) {
 if (n < 1) {
         throw 'n should be greater than or equal to 1'
     }
-
 else
 {
 	var arr = [];
@@ -93,14 +92,12 @@ else
 	
 	for(var j=1; j<=n; j++)
 	{
-		if(((console.log(arr[j])) % 5 == 0) && ((console.log(arr[j])) % 3 == 0)) {arr[j]="FizzBuzz";}
-		else if(((console.log(arr[j])) % 5 == 0) && ((console.log(arr[j])) % 3 != 0)) {arr[j]="Buzz";}
-		else if(((console.log(arr[j])) % 5 != 0) && ((console.log(arr[j])) % 3 == 0)) {arr[j]="Fizz";}
+		if((arr[j] % 5 == 0) && (arr[j] % 3 == 0)) {arr[j]="FizzBuzz";}
+		else if((arr[j] % 5 == 0) && (arr[j] % 3 != 0)) {arr[j]="Buzz";}
+		else if((arr[j] % 5 != 0) && (arr[j] % 3 == 0)) {arr[j]="Fizz";}
 	}
 	return arr;
 }
-
-
 };
 
 /**
@@ -114,6 +111,44 @@ else
  */
 Util.cipher = function (phrase) {
 
+	/*var tmp;
+	var result = "";
+	var arr = phrase.split(" ");
+	var arr2 = [];
+	var arr_chiff = [];
+	var arr_chiff_tmp = [];
+
+	for(var i = 0 ; i < arr.length ; i++)
+	{
+
+		arr2 = arr[i].split('');
+
+
+		for(var j = 0 ; j < i ; j++)
+		{
+			tmp = String.prototype.charCodeAt(arr2[j]);
+			arr_chiff_tmp.push(tmp);
+			arr_chiff_tmp[j] += 1;
+			arr_chiff.push(String.fromCharCode(arr_chiff_tmp[j]));
+		}
+	}
+
+	for(var k = 0 ; k < arr_chiff.length ; k++)
+	{
+		result.concat(arr_chiff[i]);
+	}
+	return result;*/
+
+	var maPhraseChar=phrase.split('');
+	var resultat="";
+	maPhraseChar.forEach(function(c)
+	{
+		var char=c.charCodeAt(0);
+		if(char==90) {char=64;}
+		if(char==122) {char=96;}
+		resultat+=String.fromCharCode(char+1);
+	});
+	return resultat;
 };
 
 
