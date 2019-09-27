@@ -127,6 +127,30 @@ class Interval {
      */
     intersection(interval) {
 
+	var arr = [];
+
+	if(this.includes(interval))
+	{
+		for(var i = interval.start ; i <= interval.end ; i++)
+		{
+			arr.push(i);
+		}
+
+		return arr;
+	}
+
+	else if(this.overlaps(interval))
+	{
+		for(var i = interval.start ; i <= this.end ; i++)
+		{
+			arr.push(i);
+		}
+
+		return arr;
+	}
+
+	else {arr=[]; return arr;}
+
     };
 
     /**

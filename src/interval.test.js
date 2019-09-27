@@ -58,6 +58,33 @@ describe('union', function() {
 	});
 });
 
+describe('intersection', function() {
+
+	test('Test intersection de [85;87] et [86;90]', () => {
+		var intersec_1 = new Interval(85, 87);
+		var intersec_2 = new Interval(86, 90);
+		expect(intersec_1.intersection(intersec_2)).toStrictEqual([86,87]);
+	});
+
+	test('Test intersection de [85;90] et [86;90]', () => {
+		var intersec_1 = new Interval(85, 90);
+		var intersec_2 = new Interval(86, 90);
+		expect(intersec_1.intersection(intersec_2)).toStrictEqual([86,87,88,89,90]);
+	});
+
+	test('Test intersection de [85;90] et [86;89]', () => {
+		var intersec_1 = new Interval(85, 90);
+		var intersec_2 = new Interval(86, 89);
+		expect(intersec_1.intersection(intersec_2)).toStrictEqual([86,87,88,89]);
+	});
+
+	test('Test intersection de [85;87] et [88;90]', () => {
+		var intersec_1 = new Interval(85, 87);
+		var intersec_2 = new Interval(88, 90);
+		expect(intersec_1.intersection(intersec_2)).toStrictEqual([]);
+	});
+});
+
 
 
 
