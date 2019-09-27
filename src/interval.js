@@ -104,7 +104,7 @@ class Interval {
      */
     exclusion(interval) {
 
-    };
+};
 }
 
 module.exports = Interval;
