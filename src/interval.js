@@ -63,6 +63,50 @@ class Interval {
      */
     union(interval) {
 
+	var start, end;
+	var arr = [];
+
+	if(this.overlaps(interval))
+	{
+		if(this.start<interval.start) {start = this.start;}
+		else {start = interval.start;}
+
+		if(this.end<interval.end) {end = interval.end;}
+		else {end = this.end;}
+
+		var result = new Interval(start, end);
+
+		for(var i = result.start ; i <= result.end ; i++)
+		{
+			arr.push(i);
+		}
+		return arr;
+	}
+
+	else if(!(this.overlaps(interval)))
+	{
+		if(this.start < interval.start && this.end < interval.start)
+		{
+			var result1 = new Interval(this.start, this.end);
+			var result2 = new Interval(interval.start, interval.end);
+		}
+		else 
+		{
+			var result1 = new Interval(interval.start, interval.end);
+		}
+
+		for(var i = result1.start ; i <= result1.end ; i++)
+		{
+			arr.push(i);
+		}
+
+		for(var i = result2.start ; i <= result2.end ; i++)
+		{
+			arr.push(i);
+		}
+
+		return arr;
+	}
     };
 
     /**
