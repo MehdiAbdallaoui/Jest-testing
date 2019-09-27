@@ -203,8 +203,8 @@ class Interval {
 			}
 			return arr;
 		}
-	}
-}
+	
+};
 }
 
 module.exports = Interval;
