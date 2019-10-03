@@ -48,14 +48,14 @@ Util.isPrime = function (n) {
  */
 Util.sumPrime = function(n) {
 
-if (n == 0) {
+if (n === 0) {
         throw '0 is not a prime number!'
-    };
+    }
 
-if (n == 1) {
+if (n === 1) {
         throw '1 is not a prime number!'
-    };
-  	let i = 1;
+    }
+  	let i = 2;
   	let sum = 0;
   	while (i <= n)
 	{
@@ -95,6 +95,7 @@ else
 		if((arr[j] % 5 == 0) && (arr[j] % 3 == 0)) {arr[j]="FizzBuzz";}
 		else if((arr[j] % 5 == 0) && (arr[j] % 3 != 0)) {arr[j]="Buzz";}
 		else if((arr[j] % 5 != 0) && (arr[j] % 3 == 0)) {arr[j]="Fizz";}
+		else {continue;}
 	}
 	return arr;
 }
@@ -111,44 +112,26 @@ else
  */
 Util.cipher = function (phrase) {
 
-	/*var tmp;
-	var result = "";
-	var arr = phrase.split(" ");
-	var arr2 = [];
-	var arr_chiff = [];
-	var arr_chiff_tmp = [];
-
-	for(var i = 0 ; i < arr.length ; i++)
+	var sentenceSplit=phrase.split('');
+	var result="";
+	sentenceSplit.forEach(function(m)
 	{
-
-		arr2 = arr[i].split('');
-
-
-		for(var j = 0 ; j < i ; j++)
+		var c=m.charCodeAt(0);
+		if(c==90)
 		{
-			tmp = String.prototype.charCodeAt(arr2[j]);
-			arr_chiff_tmp.push(tmp);
-			arr_chiff_tmp[j] += 1;
-			arr_chiff.push(String.fromCharCode(arr_chiff_tmp[j]));
+			c=64;
 		}
-	}
-
-	for(var k = 0 ; k < arr_chiff.length ; k++)
-	{
-		result.concat(arr_chiff[i]);
-	}
-	return result;*/
-
-	var maPhraseChar=phrase.split('');
-	var resultat="";
-	maPhraseChar.forEach(function(c)
-	{
-		var char=c.charCodeAt(0);
-		if(char==90) {char=64;}
-		if(char==122) {char=96;}
-		resultat+=String.fromCharCode(char+1);
+		if(c==122)
+		{
+			c=96;
+		}
+		if(c==32)
+		{
+			c=31;
+		}
+		result+=String.fromCharCode(c+1);
 	});
-	return resultat;
+	return result;
 };
 
 

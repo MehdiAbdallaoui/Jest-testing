@@ -23,7 +23,7 @@ class Interval {
      * @returns {boolean}
      */
     overlaps(interval) {
-        return this.end > interval.start && this.start < interval.end;
+        return this.start < interval.start && this.end > interval.start && this.end < interval.end;
     }
 
     /**
@@ -43,7 +43,7 @@ class Interval {
      * @returns {boolean}
      */
     includes(interval) {
-	return this.end > interval.end && this.start < interval.start;
+	return this.start <= interval.start && this.end >= interval.end;
     };
     /**
      * Retourne l'union de deux intervals
@@ -63,50 +63,25 @@ class Interval {
      */
     union(interval) {
 
-	var start, end;
 	var arr = [];
 
-	if(this.overlaps(interval))
-	{
-		if(this.start<interval.start) {start = this.start;}
-		else {start = interval.start;}
+	if(this.includes(interval))
+    {
+        arr = [[this.start, this.end]];
+        return arr;
+    }
 
-		if(this.end<interval.end) {end = interval.end;}
-		else {end = this.end;}
+    else if(this.overlaps(interval))
+    {
+        arr = [[this.start,interval.end]];
+        return arr;
+    }
 
-		var result = new Interval(start, end);
-
-		for(var i = result.start ; i <= result.end ; i++)
-		{
-			arr.push(i);
-		}
-		return arr;
-	}
-
-	else if(!(this.overlaps(interval)))
-	{
-		if(this.start < interval.start && this.end < interval.start)
-		{
-			var result1 = new Interval(this.start, this.end);
-			var result2 = new Interval(interval.start, interval.end);
-		}
-		else 
-		{
-			var result1 = new Interval(interval.start, interval.end);
-		}
-
-		for(var i = result1.start ; i <= result1.end ; i++)
-		{
-			arr.push(i);
-		}
-
-		for(var i = result2.start ; i <= result2.end ; i++)
-		{
-			arr.push(i);
-		}
-
-		return arr;
-	}
+    else if(!(this.overlaps(interval)))
+    {
+        arr = [[this.start, this.end],[interval.start,interval.end]];
+        return arr;
+    }
     };
 
     /**
@@ -131,26 +106,20 @@ class Interval {
 
 	if(this.includes(interval))
 	{
-		for(var i = interval.start ; i <= interval.end ; i++)
-		{
-			arr.push(i);
-		}
-
+		arr = [[interval.start,interval.end]];
 		return arr;
 	}
 
 	else if(this.overlaps(interval))
 	{
-		for(var i = interval.start ; i <= this.end ; i++)
-		{
-			arr.push(i);
-		}
-
+		arr = [[interval.start,this.end]];
 		return arr;
 	}
 
-	else {arr=[]; return arr;}
-
+    else 
+    {
+        return arr;
+    }
     };
 
     /**
@@ -173,36 +142,23 @@ class Interval {
 
 	var arr = [];
 
+	if(this.includes(interval))
+    {
+        arr = [[this.start, interval.start],[interval.end, this.end]];
+        return arr;
+    }
+
 	if(this.overlaps(interval))
 	{
-			/*var result1 = new Interval(this.start, interval.start);
-			var result2 = new Interval(this.end, interval.end);*/
-
-			for(var i = this.start ; i < interval.start ; i++)
-			{
-				arr.push(i);
-			}
-
-			for(var i = (this.end)+1 ; i <= interval.end ; i++)
-			{
-				arr.push(i);
-			}
+			arr = [[this.start,interval.start],[this.end,interval.end]];
 			return arr;
 	}
 
 	else if(!(this.overlaps(interval)))
 	{
-			for(var i = this.start ; i <= this.end ; i++)
-			{
-				arr.push(i);
-			}
-
-			for(var i = interval.start ; i <= interval.end ; i++)
-			{
-				arr.push(i);
-			}
-			return arr;
-		}
+        arr = [[this.start,this.end],[interval.start,interval.end]];
+        return arr;
+	}
 	
 };
 }
