@@ -25,8 +25,6 @@ class BookRepository {
      */
     getTotalPrice() {
 
-        let tmp = this.db.get('books').map('price').value();
-        return tmp.reduce((total, curr) => total + curr);
     }
 
 
@@ -34,7 +32,7 @@ class BookRepository {
      * Retourne un livre
      */
     getBookByName(bookName) {
-        return this.db.get('books').filter({name: bookName}).value();
+
     }
 
     /**
@@ -57,23 +55,6 @@ class BookRepository {
      *  ]
      */
     getCountBookAddedByMont(bookName) {
-
-        /*var arr = [];
-
-        for (var i = 1; i <= 12; i++) {
-            var books = getBookByName(bookName).filter({month: i}).value();
-            arr.push();
-        }
-
-        return arr;*/
-    var month_books = [];
-    var totalBooks = [];
-        for(var i = 1; i <= 12; i++) {
-            month_books = this.db.get('books').filter({month: i}).value();
-            //var number_of_books=month_books.size();
-            totalBooks.push(month_books);
-            console.log(totalBooks[i]);
-        }
 
     }
 
