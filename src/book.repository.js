@@ -24,7 +24,8 @@ class BookRepository {
      * Somme du prix de tous les livre
      */
     getTotalPrice() {
-
+        let tmp = this.db.get('books').map('price').value();
+        return tmp.reduce((total, current) => total + current);
     }
 
 
