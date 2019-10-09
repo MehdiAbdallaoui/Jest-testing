@@ -46,3 +46,32 @@ describe('Book repository total count', function () {
         expect(repository.getTotalCount()).toBe(4);
     });
 });
+
+describe('Total price of books', function () {
+
+    test('The price in case no book exists', () => {
+
+        const dbMock = {
+            //on déclare les méthodes utilisées dans book.repository.js
+            get : jest.fn().mockReturnThis(),
+            map : jest.fn().mockReturnThis(),
+            value : jest.fn().mockReturnValue([null])
+        };
+        const repository = new BookRepository(dbMock);
+
+        expect(repository.getTotalPrice()).toBe(null);
+    });
+
+    test('Total price of books', () => {
+
+        const dbMock = {
+            get : jest.fn().mockReturnThis(),
+            map : jest.fn().mockReturnThis(),
+            value : jest.fn().mockReturnValue([3,5,10])
+        };
+        const repository = new BookRepository(dbMock);
+
+        expect(repository.getTotalPrice()).toBe(18);
+    });
+});
+
