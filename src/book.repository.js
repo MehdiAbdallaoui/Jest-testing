@@ -33,7 +33,7 @@ class BookRepository {
      * Retourne un livre
      */
     getBookByName(bookName) {
-
+        return this.db.get('books').filter({name: bookName}).value();
     }
 
     /**
