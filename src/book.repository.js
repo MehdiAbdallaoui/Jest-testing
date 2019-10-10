@@ -57,6 +57,42 @@ class BookRepository {
      */
     getCountBookAddedByMont(bookName) {
 
+        //Variables declaration
+        const results = [];
+        let year, month, count=1, count_cumulative=0, date='';
+
+        //Retrieving all books named bookName
+        const TotalBooks = this.db.get('books').filter({name: bookName}).value();
+        if(TotalBooks.length === 0)
+        {
+            //Throwing an exception in case no book exists in the database
+            throw "This book does not exist in the database!";
+        }
+
+        let length=TotalBooks.length;
+        for(let x=0 ; x<length ; x++){
+
+            let book = TotalBooks[x];
+
+            //Splitting the date attribute's value into 3 values and treat them one by one
+            date = book.added_at.split("-");
+            year = date[0];
+            month = parseInt(date[1])+1;
+
+            if(results.filter(result => result.year === year && result.month === month).length !== 0){
+                let index = results.findIndex(result => result.year === year && result.month === month);
+                count_cumulative += 1;
+                results[index]["count"] +=1;
+                results[index]["count_cumulative"] = count_cumulative;
+            }
+
+            else
+            {
+                count_cumulative += 1;
+                results.push({ year, month, count, count_cumulative});
+            }
+        }
+        return results;
     }
 
 }
